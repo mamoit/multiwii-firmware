@@ -849,7 +849,7 @@ void ACC_getADC() {
 // I2C Gyroscope L3G4200D 
 // ************************************************************************************************************
 #if defined(L3G4200D)
-#define L3G4200D_ADDRESS 0x69
+#define L3G4200D_ADDRESS 0x68
 void Gyro_init() {
   delay(100);
   i2c_writeReg(L3G4200D_ADDRESS ,0x20 ,0x8F ); // CTRL_REG1   400Hz ODR, 20hz filter, run!
